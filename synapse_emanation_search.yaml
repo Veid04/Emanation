@@ -1,0 +1,64 @@
+EmanationDetection:
+  EF_eman: 2000000000.0
+  Maxpeaks_hh: 500
+  Maxpeaks_lh: 500
+  SF_eman: 100000000.0
+  dur: 0.1
+  dur_ensemble: 0.001
+  f_step: 25000000.0
+  fs_lh: 82500
+  gb_thresh_hh: 1
+  gb_thresh_lh: 1
+  kaiser_beta_hh: 10
+  kaiser_beta_lh: 3
+  log10_nan_check_limit: 1.0e-40
+  lowerHarmonic_window: Kaiser
+  min_duration: 0.02
+  min_peaks_detect: 6
+  min_samprate: 20000000.0
+  ntimes_ns: 2
+  num_runs_fundharmonic_estimate_perfreqslot: 5
+  numpeaks_crossthresh: 5
+  numtaps: 1000
+  perc_overlap: 75
+EstimateHarmonic:
+  Err_thresh_dict:
+    500: 10
+    1000: 2
+    50000: 2
+    100000000000: 2
+  fine_search_fundharmonic_estimate: true
+  fine_search_length: 4
+  fse1: 50
+  fse2: 80
+  fss1: 50
+  fss2: 5
+  fss3: 10
+  highest_fh_withoutInc: 2000
+  lowest_fh: 40
+  n1_fh: 10
+  n2_fh: 20
+  non_vectorized: false
+  num_meas1: 5
+  num_meas2: 8
+  num_steps_coarse: 3000 #3000
+  num_steps_finesearch: 500 #500
+  p_hh_1: 0.5
+  p_hh_2: 0.5
+  p_lh_1: 0.5
+  p_lh_2: 0.5
+  q1: 1
+  q2: 1
+  r1: 0.3
+  r2: 0.5
+  s1: -1
+  s2: -1
+  wt_meas_pred_hh: 0.001
+  wt_meas_pred_lh: 100
+EstimatePeaks:
+  NF_prctile: 50
+  ns_estimate_percentile: 50
+  num_slice_ns: 100
+  p1: 84
+  p2: 16
+  pct_samp_NF: 10
